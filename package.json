@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Learning JAMStack and Eleventy",
   "scripts": {
-    "start": "eleventy --serve",
+    "start": "eleventy --serve --quiet",
     "start-no-config": "eleventy --input=_site --output=dist --serve"
   },
   "author": "Ha Manh Do",

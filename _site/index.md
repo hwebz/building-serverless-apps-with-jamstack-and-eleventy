@@ -1,5 +1,7 @@
 ---
-title: JAMStack with Eleventy
+title: Welcome
+# layout: pageTemplates/base
+layout: base
 date: 2021-01-03
 #date: Created
 # date: Modififed
