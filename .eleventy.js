@@ -26,6 +26,12 @@ module.exports = function(eleventyConfig) {
         return DateTime.fromFormat(dateObj, 'LLL d, yyyy').toFormat('yyyy-LL-dd')
     })
 
+    eleventyConfig.addCollection('articles', function(collection){
+        return collection.getFilteredByGlob('_site/posts/*.md').reverse();
+    })
+
+    eleventyConfig.addFilter('limit', (array, qty) => (qty < 0 ? array.slice(qty) : array.slice(0, qty)))
+
     return {
         markdownTemplateEngine: 'njk',
         dir: {
