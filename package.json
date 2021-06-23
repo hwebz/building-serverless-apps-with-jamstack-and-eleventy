@@ -1,0 +1,13 @@
+{
+  "name": "building-serverless-apps-with-jamstack-and-eleventy",
+  "version": "1.0.0",
+  "description": "Learning JAMStack and Eleventy",
+  "scripts": {
+    "start": "eleventy --serve",
+    "start-no-config": "eleventy --input=_site --output=dist --serve"
+  },
+  "author": "Ha Manh Do",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  }
+}
