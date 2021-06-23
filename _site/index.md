@@ -1,4 +1,26 @@
-# JAMStack
+---
+title: JAMStack with Eleventy
+date: 2021-01-03
+#date: Created
+# date: Modififed
+tags: 
+    - home
+    - welcome
+    - info
+# This one already configured in .eleventy.js
+# templateEngineOverride: njk, md
+---
+
+# {{ title }}
+**Date**: {{page.date.toUTCString()}}
+
+**By**: {{ pkg.author }}
+
+<ul>
+{% for item in tags %}
+<li>{{ item }}</li>
+{% endfor %}
+</ul>
 
 The **JAMStack** is part of a family of techniques for creating sites called `serverless`, but those techniques can be a bit confusing.
 
