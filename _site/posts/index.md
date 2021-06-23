@@ -1,4 +1,5 @@
 ---
+layout: page
 pagination:
     data: collections.post
     size: 5
@@ -7,7 +8,7 @@ permalink: /posts/{{pagination.pageNumber}}/
 ---
 
 <h1 class="mb-3">Posts</h1>
-
+{% include "pagination.njk" %}
 {%- for item in pagination.items -%}
     <article class="mb-5 position-relative">
         <div class="row">
@@ -25,3 +26,4 @@ permalink: /posts/{{pagination.pageNumber}}/
         </div>
     </article>
 {%- endfor -%}
+{% include "pagination.njk" %}
