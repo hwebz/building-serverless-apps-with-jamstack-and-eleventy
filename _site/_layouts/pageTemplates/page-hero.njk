@@ -2,7 +2,7 @@
 layout: base
 headerHeight: 50vh
 ---
-<header class="site-header position-relative" style="width: 100vw; min-height: {{ headerHeight }};">
+<header class="site-header position-relative" style="width: 100%; min-height: {{ headerHeight }};">
     <section class="layout-hero position-absolute d-flex align-items-center" style="background-image: linear-gradient(rgba(0, 0, 0, .7) 50px, transparent), url({{hero}}); height: 100%; width: 100%;"></section>
     <div class="layout-hero-content position-absolute d-flex align-items-center w-100 h-100">
     <div class="container">
@@ -17,6 +17,6 @@ headerHeight: 50vh
     </div>
     </div>
 </header>
-<main class="container mt-4">
+<main class="container py-4">
     {{ content | safe }}
 </main>

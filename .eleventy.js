@@ -10,8 +10,10 @@ module.exports = function(eleventyConfig) {
         markdownTemplateEngine: 'njk',
         dir: {
             input: '_site',
-            // default folder is '_includes'
-            includes: '_layouts',
+            // no need
+            data: '_data',
+            layouts: '_layouts',
+            includes: '_includes',
             output: 'dist'
         }
     }
