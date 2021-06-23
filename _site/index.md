@@ -1,7 +1,7 @@
 ---
 title: Welcome
 # layout: pageTemplates/base
-layout: base
+layout: page
 date: 2021-01-03
 #date: Created
 # date: Modififed
