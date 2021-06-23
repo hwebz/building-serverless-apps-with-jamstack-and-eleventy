@@ -9,6 +9,7 @@
   "author": "Ha Manh Do",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
+    "js-yaml": "^3.14.1",
     "node-fetch": "^2.6.1"
   }
 }
