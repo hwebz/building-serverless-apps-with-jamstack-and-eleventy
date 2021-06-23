@@ -3,7 +3,7 @@ title: Welcome
 # layout: pageTemplates/base
 layout: page
 date: 2021-01-03
-#date: Created
+# date: Created
 # date: Modififed
 tags: 
     - home
@@ -14,13 +14,13 @@ tags:
 ---
 
 # {{ title }}
-**Date**: {{page.date.toUTCString()}}
+**Date**: {{page.date | simpleDate }}
 
 **By**: {{ pkg.author }}
 
 <ul>
 {% for item in tags %}
-<li>{{ item }}</li>
+<li>{{ item | capitalize }}</li>
 {% endfor %}
 </ul>
 
